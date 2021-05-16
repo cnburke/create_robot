@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <launch>
   <arg name="config" default="$(find create_bringup)/config/default.yaml" />
-  <arg name="desc" default="true" />
+  <arg name="desc" default="false" />
 
   <node name="create_driver" pkg="create_driver" type="create_driver" output="screen">
     <rosparam command="load" file="$(arg config)" />
